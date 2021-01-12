@@ -11,11 +11,11 @@ import Header from './Header'
 
 import 'antd/dist/antd.css';
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <Header/>
         <Switch>
@@ -25,7 +25,7 @@ function App() {
 
         </Switch>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
